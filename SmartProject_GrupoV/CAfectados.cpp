@@ -10,6 +10,7 @@ using namespace std;
 
 CAfectados::CAfectados(void)
 {
+	//huertasa gilipoçichas
 	int m_i_cantidad = 0;
 	std::string m_s_tipo_afectados = "";
 	bool m_b_recuperado = false;
