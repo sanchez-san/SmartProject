@@ -9,7 +9,7 @@
 class CAfectados
 {
 private:
-
+	int a;
 	int m_i_cantidad;
 	std::string m_s_tipo_afectados;
 	bool m_b_recuperado;
