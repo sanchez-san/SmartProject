@@ -3,8 +3,27 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include "CAfectados.h"
+#include "CCentros.h"
+#include "CIncidenteAsociadoTipoIncidente.h"
+#include "CIncidentes.h"
+#include "CPersonal.h"
+#include "CServicios.h"
+#include "CTipoIncidente.h"
+#include "CVehiculo.h"
+#include "CVehiculoAcudeCentro.h"
+#include "CVehiculoAsociadoTipoIncidente.h"
+#include"CVehiculoAtiendeIncidente.h"
+#include "Gestor.h"
+//#include "targetver.h"
+#include <Windows.h>
+#include <iostream>
+#include <sstream>
+#include <stdio.h>
+#include <sqlext.h>
+#include <string>
+#include <list>
 #include <vector>
-#include "string.h"
 
 using namespace std;
 
@@ -27,8 +46,6 @@ CAfectados::CAfectados(int Cantidad, std::string Tipo_Afectados, bool Recuperado
 	m_s_tipo_afectados = Tipo_Afectados;
 	m_b_recuperado = Recuperado;
 	m_i_ID_Afectado = ID_Afectado;
-	//CIncidentes *m_incidente;
-
 }
 
 int CAfectados::getCantidad(void)

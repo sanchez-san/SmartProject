@@ -6,6 +6,27 @@
 #include <string>
 #include <vector>
 #include "string.h"
+#include "CAfectados.h"
+#include "CCentros.h"
+#include "CIncidenteAsociadoTipoIncidente.h"
+#include "CIncidentes.h"
+#include "CPersonal.h"
+#include "CServicios.h"
+#include "CTipoIncidente.h"
+#include "CVehiculo.h"
+#include "CVehiculoAcudeCentro.h"
+#include "CVehiculoAsociadoTipoIncidente.h"
+#include"CVehiculoAtiendeIncidente.h"
+#include "Gestor.h"
+//#include "targetver.h"
+#include <Windows.h>
+#include <iostream>
+#include <sstream>
+#include <stdio.h>
+#include <sqlext.h>
+#include <string>
+#include <list>
+#include <vector>
 
 using namespace std;
 
@@ -14,6 +35,7 @@ CServicios::CServicios()
 	int m_i_ID_Servicio = 0;
 	int m_i_ID_Centro = 0;
 	int m_i_ID_Tipo_Incidente = 0;
+	std::string TipoServicio = "";
 	std::list <CTipoIncidente> m_tipo_incidente;
 	std::list <CCentros> m_centros;
 }
@@ -45,4 +67,9 @@ int CServicios::Get_ID_Centro()
 int CServicios::Get_ID_Tipo_Incidente()
 {
 	return m_i_ID_Tipo_Incidente;
+}
+
+std::string CServicios::getTipoServicio()
+{
+	return TipoServicio;
 }

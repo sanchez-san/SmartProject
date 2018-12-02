@@ -4,7 +4,28 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "string.h"
+#include <list>
+#include "CAfectados.h"
+#include "CCentros.h"
+#include "CIncidenteAsociadoTipoIncidente.h"
+#include "CIncidentes.h"
+#include "CPersonal.h"
+#include "CServicios.h"
+#include "CTipoIncidente.h"
+#include "CVehiculo.h"
+#include "CVehiculoAcudeCentro.h"
+#include "CVehiculoAsociadoTipoIncidente.h"
+#include"CVehiculoAtiendeIncidente.h"
+#include "Gestor.h"
+//#include "targetver.h"
+#include <Windows.h>
+#include <iostream>
+#include <sstream>
+#include <stdio.h>
+#include <sqlext.h>
+#include <string>
+#include <list>
+#include <vector>
 
 using namespace std;
 
@@ -27,7 +48,6 @@ CCentros::CCentros(int ID_Centro, int CoordCentroX, int CoordCentroY, std::strin
 	int coord_CentroX = CoordCentroX;
 	int coord_CentroY = CoordCentroY;
 	m_s_Tipo_Centro = Tipo_Centro;
-	//std::list <CVehiculoAcudeCentro> m_l_vehiculoacudecentro;
 }
 
 int CCentros::GetID_Centro()

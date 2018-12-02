@@ -1,11 +1,32 @@
 #include "CPersonal.h"
-#include <time.h>
-#include <time.h>
+#include "time.h"
 #include <fstream>
 #include <iostream>
 #include <string>
 #include <vector>
 #include "string.h"
+#include <list>
+#include "CAfectados.h"
+#include "CCentros.h"
+#include "CIncidenteAsociadoTipoIncidente.h"
+#include "CIncidentes.h"
+#include "CPersonal.h"
+#include "CServicios.h"
+#include "CTipoIncidente.h"
+#include "CVehiculo.h"
+#include "CVehiculoAcudeCentro.h"
+#include "CVehiculoAsociadoTipoIncidente.h"
+#include"CVehiculoAtiendeIncidente.h"
+#include "Gestor.h"
+//#include "targetver.h"
+#include <Windows.h>
+#include <iostream>
+#include <sstream>
+#include <stdio.h>
+#include <sqlext.h>
+#include <string>
+#include <list>
+#include <vector>
 
 using namespace std;
 
@@ -69,7 +90,7 @@ time_t CPersonal::getHoraEntrada()
 }
 void CPersonal::ModifyTurno(const int& new_turno)
 {
-
+	m_i_Turno = new_turno;
 }
 void CPersonal::setPersonaldisponibleTrue()
 {
@@ -87,9 +108,9 @@ void CPersonal::setPersonaldisponibleFalse()
 }
 void CPersonal::ModifyCant_Afectados(const int& new_cant)
 {
-	//HACERLOOOOO
+	m_i_Cant_Afectados = new_cant;
 }
 void CPersonal::ModifyHoraEntrada(const time_t& new_hora)
 {
-	//HACERLOOOOO
+	m_t_Hora_Entrada = new_hora;
 }

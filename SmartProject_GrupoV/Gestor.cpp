@@ -125,7 +125,7 @@ SQLRETURN Gestor::insertafectados(const CAfectados& A)
 	SQLRETURN ret;
 	std::ostringstream ss;
 	ss << "INSERT INTO Afectados ( ID_Afectados, Tipo_Afectado, ID_Incidentes,  Recuperacion, Cantidad ) VALUES ("
-		<< A.getID_Afectado << ","
+		<< A.getID_Afectado << "," 
 		<< A.getTipoAfectado << ","
 		<< A.getID_incidente << ","
 		<< A.getRecuperado << ","
@@ -241,10 +241,10 @@ SQLRETURN Gestor::getpersonal(CTipoIncidente inc, list<CVehiculo*> list_v)
 		SQLINTEGER cant_max;
 
 
-		
-		
-		
-		
+
+
+
+
 
 
 		while ((ret = SQLFetch(_stmt)) == SQL_SUCCESS) {
@@ -266,3 +266,29 @@ SQLRETURN Gestor::getpersonal(CTipoIncidente inc, list<CVehiculo*> list_v)
 		ret = SQLEndTran(SQL_HANDLE_DBC, _dbc, SQL_COMMIT);
 	}
 	return ret;
+}
+
+	//Actualiza el estado del personal entre disponible (1) o no (0)
+	SQLRETURN Gestor::updatePersonalDisponible(CPersonal Personal)
+	{
+		SQLRETURN ret;
+		std::ostringstream ss;
+		ss << "UPDATE Personal SET Personal_Disponible = " << Personal.getPersonalDisponible << ")";
+		std::string query = ss.str();
+		ret = insertQ(query);
+		ret = SQLEndTran(SQL_HANDLE_DBC, _dbc, SQL_COMMIT);
+		return ret;
+	}
+
+	//Actualiza el estado de incidente entre: espera, ocupado, atendido
+	SQLRETURN Gestor::updateEstadoIncidente(CIncidentes Incidente)
+	{
+		SQLRETURN ret;
+		std::ostringstream ss;
+		ss << "UPDATE Incidentes SET Estado_Incidente = " << Incidente.getEstado << ")"; 
+		std::string query = ss.str();
+		ret = insertQ(query);
+		ret = SQLEndTran(SQL_HANDLE_DBC, _dbc, SQL_COMMIT);
+		return ret;
+	}
+
