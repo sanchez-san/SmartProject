@@ -90,6 +90,7 @@
     <ClInclude Include="CTipoIncidente.h" />
     <ClInclude Include="CVehiculo.h" />
     <ClInclude Include="CVehiculoAcudeCentro.h" />
+    <ClInclude Include="Gestor.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="CVehiculoAtiendeIncidente.h" />
     <ClInclude Include="CVehiculoAsociadoTipoIncidente.h" />
@@ -104,6 +105,7 @@
     <ClCompile Include="CTipoIncidente.cpp" />
     <ClCompile Include="CVehiculo.cpp" />
     <ClCompile Include="CVehiculoAcudeCentro.cpp" />
+    <ClCompile Include="Gestor.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="CVehiculoAtiendeIncidente.cpp" />
     <ClCompile Include="CVehiculoAsociadoTipoIncidente.cpp" />
