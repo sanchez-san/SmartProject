@@ -13,8 +13,8 @@ private:
 	int m_i_ID_Servicio;
 	int m_i_ID_Centro;
 	int m_i_ID_Tipo_Incidente;
-	//CTipoIncidente *m_tipo_incidente;
-	//CCentro *m_centros;
+	std::list <CTipoIncidente> m_tipo_incidente;
+	std::list <CCentros> m_centros;
 
 public:
 	CServicios();

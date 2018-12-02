@@ -16,7 +16,7 @@ private:
 	int m_i_ID_Incidente;
 	std::string m_s_estado;
 	time_t m_d_tiempo;
-	//std::list <CIncidenteAsociadoTipoIncidente> m_l_tipoincidente_asociado;
+	std::list <CIncidenteAsociadoTipoIncidente> m_l_tipoincidente_asociado;
 
 public:
 	CIncidentes();

@@ -14,8 +14,8 @@ CServicios::CServicios()
 	int m_i_ID_Servicio = 0;
 	int m_i_ID_Centro = 0;
 	int m_i_ID_Tipo_Incidente = 0;
-	//CTipoIncidente *m_tipo_incidente;
-	//CCentro *m_centros;
+	std::list <CTipoIncidente> m_tipo_incidente;
+	std::list <CCentros> m_centros;
 }
 
 

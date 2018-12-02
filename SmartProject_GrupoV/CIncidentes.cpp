@@ -18,7 +18,7 @@ CIncidentes::CIncidentes()
 	std::string m_s_estado = "";
 	time_t m_d_tiempo = time(0);
 	//datetime m_d_tiempo = std::chrono::system_clock::now();
-	//std::list <CIncidenteAsociadoTipoIncidente> m_l_tipoincidente_asociado;
+	std::list <CIncidenteAsociadoTipoIncidente> m_l_tipoincidente_asociado;
 }
 
 

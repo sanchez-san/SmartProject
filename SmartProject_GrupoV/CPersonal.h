@@ -19,7 +19,7 @@ private:
 	int m_i_ID_Tipo_Incidente;
 	int m_i_Cant_Afectados;
 	time_t m_t_Hora_Entrada;
-	//CTipoIncidente *m_Tipo_Incidente;
+	std::list <CTipoIncidente> m_l_Tipo_Incidente;
 
 public:
 

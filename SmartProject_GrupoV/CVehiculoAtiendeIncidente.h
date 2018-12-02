@@ -13,8 +13,6 @@ private:
 	int m_i_matricula;
 	int m_i_ID_incidente;
 public:
-	//CVehiculos* m_i_matricula;
-	//CIncidentes* m_i_ID_incidente;
 	CVehiculoAtiendeIncidente();
 	~CVehiculoAtiendeIncidente();
 	CVehiculoAtiendeIncidente(int matricula, int incidente);

@@ -13,7 +13,7 @@ private:
 	int coord_CentroX;
 	int coord_CentroY;
 	std::string m_s_Tipo_Centro;
-	//std::list <CVehiculoAcudeCentro> m_l_vehiculoacudecentro;
+	std::list <CVehiculoAtiendeCentro> m_l_vehiculoacudecentro;
 
 public:
 	CCentros();

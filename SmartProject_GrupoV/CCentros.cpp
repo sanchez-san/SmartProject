@@ -14,7 +14,7 @@ CCentros::CCentros()
 	int coord_CentroX = 0;
 	int coord_CentroY = 0;
 	std::string m_s_Tipo_Centro = "";
-	//std::list <CVehiculoAcudeCentro> m_l_vehiculoacudecentro;
+	std::list <CVehiculoAtiendeCentro> m_l_vehiculoacudecentro;
 }
 
 CCentros::~CCentros()

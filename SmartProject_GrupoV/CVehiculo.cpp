@@ -16,8 +16,8 @@ CVehiculo::CVehiculo()
 	int Coord_Vehiculo_X = 0;
 	int Coord_Vehiculo_Y = 0;
 	std::string m_s_tipo_vehiculo = "";
-	//std::list <CVehiculoAtiendeIncidente> m_l_AtiendeInc;
-	//std::list <CVehiculoAsociadoTipoIncidente> m_l_vehiculoasociadoATipo;
+	std::list <CVehiculoAtiendeIncidente> m_l_AtiendeInc;
+	std::list <CVehiculoAsociadoTipoIncidente> m_l_vehiculoasociadoATipo;
 }
 
 CVehiculo::CVehiculo(bool disponible, int matricula, int Coord_Vehiculo_X, int Coord_Vehiculo_Y, std::string tipo_Vehiculo)

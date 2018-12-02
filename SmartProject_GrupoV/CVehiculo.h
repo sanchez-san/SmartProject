@@ -16,8 +16,9 @@ private:
 	int Coord_Vehiculo_X;
 	int Coord_Vehiculo_Y;
 	std::string m_s_tipo_vehiculo;
-	//std::list <CVehiculoAtiendeIncidente> m_l_AtiendeInc; 
-	//std::list <CVehiculoAsociadoTipoIncidente> m_l_vehiculoasociadoATipo;
+	std::list <CVehiculoAtiendeIncidente> m_l_AtiendeInc;
+	CVehiculoAsociadoTipoIncidente m_l_vehiculoasociadoATipo;
+
 
 public:
 

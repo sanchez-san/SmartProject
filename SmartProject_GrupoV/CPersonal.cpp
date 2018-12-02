@@ -17,11 +17,11 @@ CPersonal::CPersonal()
 	std::string m_s_Tipo_Personal = "";
 	int m_i_Cant_Maxima_Afectados = 0;
 	int m_i_ID_Centro = 0;
-	int m_i_Turno = 0;
+	int m_i_Turno = 0;  //Cantidad de horas de cada turno
 	int m_i_ID_Tipo_Incidente = 0;
 	int m_i_Cant_Afectados = 0;
 	time_t m_t_Hora_Entrada;
-	//CTipoIncidente *m_Tipo_Incidente
+	std::list <CTipoIncidente> m_Tipo_Incidente;
 }
 
 

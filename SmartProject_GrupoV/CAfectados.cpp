@@ -14,8 +14,7 @@ CAfectados::CAfectados(void)
 	std::string m_s_tipo_afectados = "";
 	bool m_b_recuperado = false;
 	int m_i_ID_Afectado = 0;
-	//CIncidentes *m_incidente;
-
+	std::list <CIncidentes> m_incidente;
 }
 
 CAfectados::~CAfectados(void)

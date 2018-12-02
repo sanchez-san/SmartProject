@@ -9,12 +9,11 @@
 class CAfectados
 {
 private:
-	int a;
 	int m_i_cantidad;
 	std::string m_s_tipo_afectados;
 	bool m_b_recuperado;
 	int m_i_ID_Afectado;
-	//CIncidentes *m_incidente;
+	std::list <CIncidentes> m_incidente;
 
 public:
 

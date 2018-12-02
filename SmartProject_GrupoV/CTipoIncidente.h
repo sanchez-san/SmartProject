@@ -9,7 +9,7 @@ private:
 	std::string m_s_tipo_vehiculo;
 	int m_i_ID_Tipo;
 	std::string m_s_tipo_servicio;
-	//std::list<CIncidente*> Incidente_Asociado;
+	std::list <CIncidentes> Incidente_Asociado;
 
 public:
 	CTipoIncidente();
