@@ -1,4 +1,4 @@
-#include "CCordenadas.h"
+#include "CCoordenadas.h"
 #include<stdlib.h>
 #include "CAfectados.h"
 #include "CCentros.h"

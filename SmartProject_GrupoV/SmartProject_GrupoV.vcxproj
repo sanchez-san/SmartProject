@@ -83,7 +83,7 @@
   <ItemGroup>
     <ClInclude Include="CAfectados.h" />
     <ClInclude Include="CCentros.h" />
-    <ClInclude Include="CCordenadas.h" />
+    <ClInclude Include="CCoordenadas.h" />
     <ClInclude Include="CIncidenteAsociadoTipoIncidente.h" />
     <ClInclude Include="CIncidentes.h" />
     <ClInclude Include="CPersonal.h" />
@@ -99,7 +99,7 @@
   <ItemGroup>
     <ClCompile Include="CAfectados.cpp" />
     <ClCompile Include="CCentros.cpp" />
-    <ClCompile Include="CCordenadas.cpp" />
+    <ClCompile Include="CCoordenadas.cpp" />
     <ClCompile Include="CIncidenteAsociadoTipoIncidente.cpp" />
     <ClCompile Include="CIncidentes.cpp" />
     <ClCompile Include="CPersonal.cpp" />

@@ -5,6 +5,8 @@
 #include <string>
 #include <vector>
 #include "string.h"
+#include "CIncidentes.h"
+#include <list>
 
 class CAfectados
 {

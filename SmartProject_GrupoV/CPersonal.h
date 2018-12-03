@@ -5,6 +5,7 @@
 #include <string>
 #include <vector>
 #include "string.h"
+#include "CTipoIncidente.h"
 
 class CPersonal
 {

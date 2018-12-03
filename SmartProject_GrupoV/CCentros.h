@@ -5,6 +5,8 @@
 #include <string>
 #include <vector>
 #include "string.h"
+#include "CVehiculoAcudeCentro.h"
+#include <list>
 
 class CCentros
 {
@@ -13,7 +15,7 @@ private:
 	int coord_CentroX;
 	int coord_CentroY;
 	std::string m_s_Tipo_Centro;
-	std::list <CVehiculoAtiendeCentro> m_l_vehiculoacudecentro;
+	std::list <CVehiculoAcudeCentro> m_l_vehiculoacudecentro;
 
 public:
 	CCentros();

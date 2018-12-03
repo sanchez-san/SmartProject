@@ -6,6 +6,8 @@
 #include <string>
 #include <vector>
 #include "string.h"
+#include <list>
+#include "CVehiculoAtiendeIncidente.h"
 
 class CVehiculo
 {

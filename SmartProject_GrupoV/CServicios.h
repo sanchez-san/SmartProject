@@ -6,6 +6,10 @@
 #include <string>
 #include <vector>
 #include "string.h"
+#include <list>
+#include "CTipoIncidente.h"
+#include "CCentros.h"
+
 
 class CServicios
 {
