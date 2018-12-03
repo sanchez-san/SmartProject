@@ -292,3 +292,5 @@ SQLRETURN Gestor::getpersonal(CTipoIncidente inc, list<CVehiculo*> list_v)
 		return ret;
 	}
 
+	
+

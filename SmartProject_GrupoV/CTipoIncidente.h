@@ -19,6 +19,7 @@ public:
 	std::string getTipoVehiculo();
 	int getID_tipo();
 	std::string getTipoServicio();
+	void setTipoVehiculo(std::string tipovehiculo);
 };
 
 

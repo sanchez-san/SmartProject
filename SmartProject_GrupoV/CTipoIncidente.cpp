@@ -68,3 +68,8 @@ std::string CTipoIncidente::getTipoServicio()
 {
 	return m_s_tipo_servicio;
 }
+
+void CTipoIncidente::setTipoVehiculo(std::string tipovehiculo)
+{
+	m_s_tipo_vehiculo = tipovehiculo;
+}

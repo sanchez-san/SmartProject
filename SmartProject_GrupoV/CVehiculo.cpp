@@ -56,6 +56,11 @@ CVehiculo::~CVehiculo()
 {
 }
 
+int CVehiculo::getVehiculoID()
+{
+	return m_i_matricula;
+}
+
 bool CVehiculo::getVehiculoDisp()
 {
 	return m_b_Vehiculo_disp;

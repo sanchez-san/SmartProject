@@ -34,5 +34,6 @@ public:
 	void ModifyCoordVehiculo(int CoordX, int CoordY);
 	void setDisponibleTrue();
 	void setDisponisbleFalse();
+	void getVehiculoID();
 };
 
